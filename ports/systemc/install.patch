@@ -1,8 +1,7 @@
-diff --git a/CMakeLists.txt b/CMakeLists.txt
-index b7815ae..86d79d1 100644
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -555,7 +555,7 @@ if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+diff -ru systemc-2.3.4/CMakeLists.txt systemc-2.3.4-patched/CMakeLists.txt
+--- systemc-2.3.4/CMakeLists.txt	2022-12-02 11:13:58.000000000 -0500
++++ systemc-2.3.4-patched/CMakeLists.txt	2023-02-07 22:13:36.531908100 -0500
+@@ -567,7 +567,7 @@
  endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
  
  # Set the installation paths for headers, libraries, and documentation.
@@ -11,7 +10,7 @@ index b7815ae..86d79d1 100644
       "Documentation installation directory") # otherwise mixed-case
  if (INSTALL_TO_LIB_BUILD_TYPE_DIR)
    # Install libraries to lib-${CMAKE_BUILD_TYPE} so that different build variants
-@@ -584,14 +584,14 @@ if (INSTALL_LIB_TARGET_ARCH_SYMLINK AND CMAKE_HOST_UNIX)
+@@ -596,14 +596,14 @@
  endif (INSTALL_LIB_TARGET_ARCH_SYMLINK AND CMAKE_HOST_UNIX)
  
  if (INSTALL_TO_LIB_BUILD_TYPE_DIR OR INSTALL_TO_LIB_TARGET_ARCH_DIR)

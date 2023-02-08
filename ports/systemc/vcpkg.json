@@ -1,6 +1,7 @@
 {
   "name": "systemc",
-  "version-string": "2.3.3",
-  "port-version": 6,
-  "description": "A set of C++ classes and macros which provide an event-driven simulation kernel in C++"
+  "version-string": "2.3.4",
+  "port-version": 7,
+  "description": "A set of C++ classes and macros which provide an event-driven simulation kernel in C++",
+  "license": "Apache-2.0"
 }

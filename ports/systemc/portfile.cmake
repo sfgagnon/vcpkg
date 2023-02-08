@@ -1,10 +1,10 @@
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 
-set(SYSTEMC_VERSION 2.3.3)
+set(SYSTEMC_VERSION 2.3.4)
 vcpkg_download_distfile(ARCHIVE
-    URLS "https://www.accellera.org/images/downloads/standards/systemc/systemc-${SYSTEMC_VERSION}.zip"
-    FILENAME "systemc-${SYSTEMC_VERSION}.zip"
-    SHA512 f4df172addf816a1928d411dcab42c1679dc4c9d772f406c10d798a2c174d89cdac7a83947fa8beea1e3aff93da522d2d2daf61a4841ec456af7b7446c5c4a14
+    URLS "https://github.com/accellera-official/systemc/archive/refs/tags/${SYSTEMC_VERSION}.zip"
+    FILENAME "${SYSTEMC_VERSION}.zip"
+    SHA512 ec7879a9dd089627a3a232f160ce4e3814faaf393eac3b2f0b01a35d6bf1d43ef95b5baf45b4e040cd6e75d17e3c10e5228832da712d5e5fac51e824253f19ce
 )
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH
